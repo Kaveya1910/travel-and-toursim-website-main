@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust — Travel & Tourism</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Page loader -->
+    <div class="page-loader">
+      <div class="loader-content">
+        <span class="loader-text">WANDERLUST</span>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- NAV -->
+      <nav id="navbar">
+        <div class="nav-logo">
+          <img src="./logo.jpg" alt="logo" />
+          <span class="nav-brand">WANDERLUST</span>
+        </div>
+        <div class="subnav">
+          <a href="#home"><span>01</span> Home</a>
+          <a href="#about"><span>02</span> About</a>
+          <a href="#destination"><span>03</span> Destinations</a>
+          <a href="#review"><span>04</span> Reviews</a>
+        </div>
+        <div class="nav-cta">
+          <button class="nav-btn">Book Now</button>
+        </div>
+        <i class="fa-solid fa-bars bars"></i>
+      </nav>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu" id="mobileMenu">
+        <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
+        <a href="#home" class="mob-link">Home</a>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#destination" class="mob-link">Destinations</a>
+        <a href="#review" class="mob-link">Reviews</a>
+      </div>
+
+      <!-- BOX-1 HERO -->
+      <section class="box box-1" id="home">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./nature.mp4"
+          id="videosource1"
+        ></video>
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./adventure.mp4"
+          id="videosource2"
+        ></video>
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./city.mp4"
+          id="videosource3"
+        ></video>
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./spirtual.mp4"
+          id="videosource4"
+        ></video>
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./wildlife.mp4"
+          id="videosource5"
+        ></video>
+
+        <!-- Overlay gradient -->
+        <div class="hero-overlay"></div>
+        <!-- Noise texture -->
+        <div class="hero-noise"></div>
+
+        <div class="content">
+          <div class="hero-tag reveal-up" style="--d: 0.1s">
+            DISCOVER THE WORLD
+          </div>
+          <h1 class="hero-title reveal-up" style="--d: 0.25s">TRAVEL</h1>
+          <p class="hero-subtitle reveal-up" style="--d: 0.4s">
+            Breathtaking destinations, local insights &amp; hassle-free planning
+            — all in one platform.
+          </p>
+
+          <div class="topic-01 reveal-up" style="--d: 0.55s">
+            <div class="topic">
+              <p class="menu active" onclick="menu1(this)">
+                <i class="fa-solid fa-leaf"></i> Nature
+              </p>
+              <p class="menu" onclick="menu2(this)">
+                <i class="fa-solid fa-mountain"></i> Adventure
+              </p>
+              <p class="menu" onclick="menu3(this)">
+                <i class="fa-solid fa-city"></i> City
+              </p>
+              <p class="menu" onclick="menu4(this)">
+                <i class="fa-solid fa-om"></i> Spiritual
+              </p>
+              <p class="menu" onclick="menu5(this)">
+                <i class="fa-solid fa-paw"></i> Wildlife
+              </p>
+            </div>
+            <div class="icon pulse-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+
+          <div class="btn reveal-up" style="--d: 0.7s">
+            <button class="btn-login">
+              <span>Login</span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+            <button class="btn-signup">Sign Up</button>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+          <div class="scroll-line"></div>
+          <span>Scroll</span>
+        </div>
+      </section>
+
+      <!-- BOX-2 ABOUT -->
+      <section class="box box-2" id="about">
+        <div class="pic">
+          <div class="pic-bg-circle"></div>
+          <img
+            src="./man-with-two-suitcases-removebg-preview.png"
+            class="about-img"
+          />
+          <div class="floating-badge">
+            <i class="fa-solid fa-star"></i>
+            <span>4.9 Rating</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag fade-in-right">WHO WE ARE</div>
+          <h1 class="fade-in-right" style="--d: 0.15s">
+            We Are the Bridge To <br /><em>Your Adventure</em> Dreams.
+          </h1>
+          <p class="fade-in-right" style="--d: 0.3s">
+            We craft unforgettable journeys — from misty mountain trails to
+            golden coastal sunsets. Every trip is personally curated so you
+            experience the soul of every destination, not just its surface.
+          </p>
+
+          <section class="slide2" id="statsSection">
+            <div class="stat fade-in-right" style="--d: 0.45s">
+              <h2 class="counter" data-target="9">0</h2>
+              <span>★</span>
+              <p>Rating</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat fade-in-right" style="--d: 0.6s">
+              <h2 class="counter" data-target="15000">0</h2>
+              <span>+</span>
+              <p>Happy Customers</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat fade-in-right" style="--d: 0.75s">
+              <h2 class="counter" data-target="2000">0</h2>
+              <span>+</span>
+              <p>Subscribers</p>
+            </div>
+          </section>
+
+          <a
+            href="#destination"
+            class="about-cta fade-in-right"
+            style="--d: 0.9s"
+          >
+            Explore Destinations <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- BOX-3 DESTINATIONS SLIDER -->
+      <section class="box box-3" id="destination">
+        <div class="list">
+          <div class="item">
+            <img src="./tamilnadu.jpg" />
+            <div class="creative-content">
+              <div class="dest-tag title-01">South India</div>
+              <h1 class="title-01">TAMIL NADU</h1>
+              <p class="para">
+                Famed for Dravidian-style temples, Tamil Nadu dazzles with
+                Meenakshi Amman in Madurai, the sacred Ramanathaswamy Temple,
+                and the ritual sunrises of Kanyakumari at India's southernmost
+                tip.
+              </p>
+              <button class="dest-btn">
+                <span>Explore</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./kerala.webp" />
+            <div class="creative-content">
+              <div class="dest-tag title-01">God's Own Country</div>
+              <h1 class="title-01">KERALA</h1>
+              <p class="para">
+                Emerald backwaters, spice-scented hills, and pristine beaches
+                make Kerala a dream. Houseboat rides on Alleppey and the lush
+                valleys of Munnar await your soul.
+              </p>
+              <button class="dest-btn">
+                <span>Explore</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./karnataka.jpeg" />
+            <div class="creative-content">
+              <div class="dest-tag title-01">Garden State</div>
+              <h1 class="title-01">KARNATAKA</h1>
+              <p class="para">
+                From the royal grandeur of Mysore Palace to the ancient ruins of
+                Hampi and the coffee estates of Coorg, Karnataka blends history,
+                nature and culture.
+              </p>
+              <button class="dest-btn">
+                <span>Explore</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./ooty.jpg" />
+            <div class="creative-content">
+              <div class="dest-tag title-01">Queen of Hills</div>
+              <h1 class="title-01">OOTY</h1>
+              <p class="para">
+                Nestled in the Nilgiri hills, Ooty enchants with its toy train
+                rides through tea estates, sprawling botanical gardens, and
+                misty morning lake views.
+              </p>
+              <button class="dest-btn">
+                <span>Explore</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Jammu-Kashmir.jpg" />
+            <div class="creative-content">
+              <div class="dest-tag title-01">Paradise on Earth</div>
+              <h1 class="title-01">JAMMU & KASHMIR</h1>
+              <p class="para">
+                Snow-capped peaks, shikara rides on Dal Lake, fragrant saffron
+                fields — Jammu & Kashmir is the crown jewel of Indian
+                landscapes.
+              </p>
+              <button class="dest-btn">
+                <span>Explore</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnails -->
+        <div class="thumbnails">
+          <div class="item-01">
+            <img src="./kerala.webp" />
+            <div class="creative-content"><p>Kerala</p></div>
+          </div>
+          <div class="item-01">
+            <img src="./karnataka.jpeg" />
+            <div class="creative-content"><p>Karnataka</p></div>
+          </div>
+          <div class="item-01">
+            <img src="./ooty.jpg" />
+            <div class="creative-content"><p>Ooty</p></div>
+          </div>
+          <div class="item-01">
+            <img src="./Jammu-Kashmir.jpg" />
+            <div class="creative-content"><p>Kashmir</p></div>
+          </div>
+          <div class="item-01">
+            <img src="./tamilnadu.jpg" />
+            <div class="creative-content"><p>Tamil Nadu</p></div>
+          </div>
+        </div>
+
+        <!-- arrow -->
+        <div class="arrow">
+          <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+
+        <!-- dest counter -->
+        <div class="dest-counter">
+          <span id="currentSlide">01</span> / <span>05</span>
+        </div>
+      </section>
+
+      <!-- BOX-4 REVIEWS -->
+      <section class="box box-4" id="review">
+        <div class="review-section-title">
+          <h2>What Travellers Say</h2>
+          <p>Real stories from real adventurers</p>
+        </div>
+        <div class="overall-slider">
+          <div class="frame">
+            <div class="review-box">
+              <div class="review-number">01</div>
+              <div class="review-stars">★★★★★</div>
+              <h2>Maya Sharma</h2>
+              <p>
+                "The Kerala trip was absolutely magical. Every detail was
+                perfectly planned — the houseboat, the sunsets, the food. I'll
+                be booking my next trip very soon!"
+              </p>
+              <div class="review-images">
+                <img src="./offer-travel-img-1.jpeg" />
+                <img class="review-img" src="./offer-travel-img-2.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="frame">
+            <div class="review-box">
+              <div class="review-number">02</div>
+              <div class="review-stars">★★★★★</div>
+              <h2>Alex Mendes</h2>
+              <p>
+                "Kashmir exceeded every expectation. The team handled everything
+                flawlessly. Waking up to snow on Dal Lake was a memory I'll
+                carry forever."
+              </p>
+              <div class="review-images">
+                <img src="./offer-travel-img-4.jpg" />
+                <img class="review-img" src="./offer-travel-img-5.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="frame">
+            <div class="review-box">
+              <div class="review-number">03</div>
+              <div class="review-stars">★★★★★</div>
+              <h2>Grace Okafor</h2>
+              <p>
+                "Tamil Nadu's temples left me speechless. The Wanderlust team's
+                local knowledge turned a vacation into a true cultural
+                immersion. Highly recommended!"
+              </p>
+              <div class="review-images">
+                <img src="./offer-travel-img-6.jpg" />
+                <img class="review-img" src="./offer-travel-img-3.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-angle-right angle-right"></i>
+        <i class="fa-solid fa-angle-left angle-left"></i>
+        <div class="dots-container">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+      </section>
+
+      <!-- BOX-5 BOOKING FORM -->
+      <section class="box box-5">
+        <form class="form-validation" id="form" novalidate>
+          <div class="form-header">
+            <div class="form-tag">GET STARTED</div>
+            <h1>Book Your Dream <em>Tour Today</em></h1>
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input id="username" type="text" placeholder="Your full name *" />
+          </div>
+          <div class="error"></div>
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input id="email" type="email" placeholder="Your email address *" />
+          </div>
+          <div class="error"></div>
+          <div class="input-group">
+            <i class="fa-solid fa-phone"></i>
+            <input id="phone" type="text" placeholder="Your phone number *" />
+          </div>
+          <div class="error"></div>
+          <div class="dates">
+            <div class="input-group half">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="City of Residence" />
+            </div>
+            <div class="input-group half">
+              <i class="fa-solid fa-plane"></i>
+              <input type="text" placeholder="Destination" />
+            </div>
+          </div>
+          <button id="btn" type="submit" class="submit-btn">
+            <span>Book Now</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+
+          <div id="book-success">
+            <div class="success-inner">
+              <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+              <h1 id="success-msg"></h1>
+              <img src="./success.gif" />
+              <h2>Our team will contact you within 1 hour.</h2>
+              <button id="btn-close" type="button">Continue Exploring</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="contact-us">
+          <div class="contact-bg-text">CONTACT</div>
+          <div class="contact-us-01">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h1>Call Us</h1>
+            <p>+91 11111 22222</p>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-us-01">
+            <div class="contact-icon-wrap">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h1>Email Us</h1>
+            <p>hello@wanderlust.in</p>
+          </div>
+          <div class="contact-divider"></div>
+          <div class="contact-us-01">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h1>Visit Us</h1>
+            <p>Anna Nagar, Chennai</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOX-6 FOOTER -->
+      <section class="box box-6">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img class="logo" src="./logo.jpg" alt="logo" />
+            <span>WANDERLUST</span>
+          </div>
+          <div class="subscribe">
+            <h2>Stay Inspired</h2>
+            <p>Get travel tips & deals in your inbox.</p>
+            <div class="subscribe-row">
+              <input
+                id="emailinput"
+                type="email"
+                placeholder="Enter your email address"
+              />
+              <button onclick="subscribe()">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-1">
+            <h3>About Us</h3>
+            <p>Curated travel experiences</p>
+            <p>Our story & mission</p>
+            <p>Meet the team</p>
+            <p>Press & media</p>
+          </div>
+          <div class="footer-1">
+            <h3>Quick Links</h3>
+            <p>Destinations</p>
+            <p>Services</p>
+            <p>Contact</p>
+            <p>Enquire Now</p>
+          </div>
+          <div class="footer-1">
+            <h3>Working Hours</h3>
+            <p>Mon–Fri: 9:00 AM – 10:00 PM</p>
+            <p>Sat–Sun: 10:00 AM – 5:00 PM</p>
+            <p>Holidays: On Request</p>
+          </div>
+          <div class="footer-1">
+            <h3>Get in Touch</h3>
+            <p>School Street, Anna Nagar</p>
+            <p>hello@wanderlust.in</p>
+            <p>+91 99909 09090</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Wanderlust Travel & Tourism. All rights reserved.</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
